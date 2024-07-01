@@ -77,6 +77,11 @@
 
 .img-divino {
     object-fit: contain;
+    transition: transform .2s;
+}
+
+.img-divino:hover {
+    transform: scale(1.2);
 }
 
 h1 {
@@ -129,6 +134,11 @@ figure {
 figure img {
     object-fit: contain;
     border-radius: 10px;
+    transition: transform .2s;
+}
+
+figure img:hover {
+    transform: scale(1.2);
 }
 
 /* quote section*/
