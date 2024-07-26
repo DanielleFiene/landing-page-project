@@ -16,18 +16,23 @@
         <link href="./resources/CSS/normalize.css" rel="stylesheet" type="text/css">
         <link href="./resources/CSS/style2.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/56e9e1144f.js" crossorigin="anonymous" defer></script>
     </head>
 
     <body>
          <!--Navigation bar section with logo-->
          <nav class="navbar2">
             <div class="navbar-container2">
-                <li class="navbar-item2"><a href="#služby" class="navbar-link2">služby</a></li>
-                <li class="navbar-item2"><a href="#kontakt" class="navbar-link2">kontakt</a></li>
+                <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+                <ul class="navbar-items2">
+                    <li class="navbar-item2"><a href="#služby" class="navbar-link2">služby</a></li>
+                    <li class="navbar-item2"><a href="#kontakt" class="navbar-link2">kontakty</a></li>
+                </ul>
             </div>
         </nav>
+        
         <!-- Header/hero section-->
         <header>
             <div class="hero-content">
@@ -45,7 +50,7 @@
         <!--Main section-->
         <main>
         <!-- First Slideshow -->
-<section>
+<section id="služby">
     <h3 id="center-text">Autoservis</h3>
     <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
@@ -141,14 +146,14 @@
         </figure>
         </blockquote>
     </section>
-    <section>
+    <section id="kontakt">
         <div class="footer-content">
             <div class="boxfooter-item">
-                <address>
+                <p>
                     Adresa: <br>
                     Třída Soukenická 31,<br>
                     550 01 Broumov 1
-                </address>
+                </p>
             </div>
             <div class="boxfooter-item">
                 <p>Platební metody:<br>Hotově</p>
@@ -157,6 +162,12 @@
                 <p>Oficiální údaje:<br>
                     Pavel Špreňar<br>
                     IČ: 63187230
+                </p>
+            </div>
+            <div class="boxfooter-item">
+                <p>Kontakty:<br>
+                    <i class="fa-solid fa-phone"></i><a href="tel:+420724960620">724 960 620</a><br>
+                    <i class="fa-solid fa-envelope"></i><a href="mailto:pavel.sprenar@seznam.cz">pavel.sprenar@seznam.cz</a>
                 </p>
             </div>
             <div class="boxfooter-item">
@@ -177,6 +188,7 @@
         </footer>
         <!--Room for JavaScript file -->
         <script src="./resources/JS/slide.js" defer></script>
+        <script src="./resources/JS/togglenav.js"></script>
     </body>
 
 </html>

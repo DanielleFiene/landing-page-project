@@ -4,6 +4,7 @@
     font-family: Roboto, sans-serif;
     line-height: 150%;
     letter-spacing: 0.05em;
+    scroll-behavior: smooth;
   }
 
   .navbar2 {
@@ -19,14 +20,28 @@
     margin: 0 auto;
 }
 
-.navbar-item2 {
-    list-style: none;
+.navbar-toggle {
+    display: none;
+    background-color: #1F2937;
+    border: none;
+    color: #F9FAF8;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-items2 {
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item2 {
     margin: 0;
     padding: 10px;
 }
 
-.navbar-item2 a {
+.navbar-link2 {
     color: #F9FAF8;
     text-decoration: none;
     text-transform: uppercase;
@@ -34,7 +49,7 @@
     transition: background-color 0.3s ease;
 }
 
-.navbar-item2 a:hover {
+.navbar-link2:hover {
     background-color: #575757;
     border-radius: 4px;
 }
@@ -47,6 +62,8 @@
     width: 100%;
     height: 450px;
     color: #F9FAF8;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    padding: 20px; /* Add padding for better spacing on small screens */
 }
 
 .box1-inside, .box2-inside {
@@ -89,9 +106,9 @@ p {
     background-color: #3882F6;
     padding: 5px;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 10px;
-    padding: 10px;
+    padding: 12px 20px;
     transition: transform 0.3s ease;
     cursor: pointer;
   }
@@ -252,11 +269,11 @@ p {
   /* footerSection */
   .btn2 {
     background-color: #3882F6;
-    padding: 5px;
+    padding: 12px;
     color: #E5E7EB;
     width: 40%;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-top: 15px;
     border: 2px solid white;
     transition: transform 0.3s ease;
@@ -313,6 +330,101 @@ iframe {
     text-align: center;
     font-weight: 100;
     font-size: 14px;
+  }
+
+  .boxfooter-item a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  .boxfooter-item a:hover {
+    color: #1F2937;
+  }
+
+  .fa-solid {
+    padding-right: 10px;
+  }
+
+  @media (max-width: 380px) {
+
+    .hero-content {
+      flex-direction: column; /* Stack the boxes vertically on small screens */
+      height: auto; /* Let the height be auto for better responsiveness */
+      text-align: center; /* Center the text for better presentation on small screens */
+  }
+    h1 {
+        font-size: 22px; /* Further reduce font size */
+    }
+
+    h2 {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    h3 {
+        font-size: 16px; /* Further reduce font size */
+    }
+
+    .box1-inside {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .box2-inside img {
+        height: auto;
+        width: 100%; /* Ensure image takes full width */
+    }
+
+    .btn-1 a {
+        font-size: 14px; /* Adjust font size for the button link */
+    }
+}
+
+  @media (max-width: 768px) {
+    .navbar-toggle {
+      display: block;
+  }
+
+  .navbar-items2 {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navbar-items2.active {
+      display: flex;
+  }
+
+  .navbar-item2 {
+      width: 100%;
+      text-align: center;
+  }
+  .hero-content {
+    flex-direction: column; /* Stack the boxes vertically on small screens */
+    height: auto; /* Let the height be auto for better responsiveness */
+    text-align: center; /* Center the text for better presentation on small screens */
+}
+
+.box1-inside, .box2-inside {
+    max-width: 100%; /* Make boxes take full width */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+h1 {
+    font-size: 36px; /* Adjust font size for smaller screens */
+}
+
+h2 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+}
+
+h3 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+}
+
+.box2-inside img {
+    height: auto;
+    width: 100%; /* Make image take full width */
+}
   }
   
 
