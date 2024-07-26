@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+  }
+
+  .navbar2 {
+    background-color: #1F2937;
+    padding: 10px 20px;
+}
+
+.navbar-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-item2 {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar-item2 a {
+    color: #F9FAF8;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-item2 a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.hero-content {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    color: #F9FAF8;
+}
+
+.box1-inside, .box2-inside {
+    padding: 10px;
+    margin: 0 10px;
+    flex: 1;
+    max-width: 400px; /* Ensure the boxes don't get too wide */
+}
+
+.box1-inside {
+    text-align: left;
+}
+
+.box2-inside img {
+    height: 250px;
+    width: auto;
+    display: block; /* Ensures the image is centered within the box */
+    margin: 0 auto;
+}
+
+.img-1 {
+    transition: transform 0.3s ease;
+}
+
+.img-1:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 48px;
+    color: #F9FAF8;
+  }
+
+p {
+    font-size: 18px;
+}
+
+.btn-1 {
+    background-color: #3882F6;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+.btn-1:hover {
+    transform: scale(1.05);
+    background-color: #1F2937;
+    border-color: white;
+}
+
+.btn-1:active {
+    transform: scale(0.9);
+}
+
+.btn-1 a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+#center-text {
+    font-weight: 900;
+    font-size: 36px;
+    color: #1F2937;
+    text-align: center;
+    margin: 10px 0;
+    padding-top: 60px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    top: 30px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides1 {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/4 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot1:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .mySlides2 {
+    display: none;
+  }
+
+  .dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot2:hover {
+    background-color: #717171;
+  }
+
+  blockquote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    text-align: center;
+    width: 40%;
+    padding: 120px 0;
+  }
+
+  .quote-container {
+    background-color: #E5E7EB;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fig2 {
+    font-weight: bold;
+    float: right;
+    margin-top: 50px;
+  }
+
+  /* footerSection */
+  .btn2 {
+    background-color: #3882F6;
+    padding: 5px;
+    color: #E5E7EB;
+    width: 40%;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 2px solid white;
+    transition: transform 0.3s ease;
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  .btn2:hover {
+    background-color: #1F2937;
+    transform: scale(1.05);
+  }
+  
+.btn2:active {
+    transform: scale(0.9);
+}
+
+  
+.footer-content {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;
+    width: 100%;
+    height: 350px; /* Adjust as needed */
+    color: #F9FAF8;
+    padding: 20px; /* Adds padding around the content */
+    box-sizing: border-box;
+}
+
+.boxfooter-item {
+    flex: 1; /* Allows items to grow and shrink equally */
+    margin: 0 10px; /* Adds space between items */
+    display: flex; /* Enables Flexbox on items */
+    align-items: center;
+    justify-content: center; /* Centers content within each item */
+    text-align: left; /* Centers text inside the items */
+    min-width: 0; /* Prevents flex items from overflowing */
+}
+
+.map-and-button {
+    display: flex;
+    flex-direction: column; /* Stacks the map and button vertically */
+    align-items: center; /* Centers items horizontally */
+}
+
+iframe {
+    max-width: 100%; /* Ensures iframe fits within its container */
+    height: 200px; /* Adjust height as needed */
+}
+
+  footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 30px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 14px;
+  }
+  
+

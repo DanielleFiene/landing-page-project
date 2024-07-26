@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <!--Head/ & meta section-->
     <head>
         <meta charset="UTF-8">
@@ -8,9 +8,13 @@
         <meta name="author" content="Danielle Fiene">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <title>Pet Landing Page</title>
-        <link rel="icon" href="" type="image/x-icon">
-        <link href="./resources/CSS/style.css" rel="stylesheet" type="text/css">
+        <title>PAVEL ŠPREŇAR</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link href="./resources/CSS/normalize.css" rel="stylesheet" type="text/css">
+        <link href="./resources/CSS/style2.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -20,71 +24,159 @@
          <!--Navigation bar section with logo-->
          <nav class="navbar2">
             <div class="navbar-container2">
-                <div class="logo2">Header Logo</div>
-        </div>
+                <li class="navbar-item2"><a href="#služby" class="navbar-link2">služby</a></li>
+                <li class="navbar-item2"><a href="#kontakt" class="navbar-link2">kontakt</a></li>
+            </div>
         </nav>
         <!-- Header/hero section-->
         <header>
             <div class="hero-content">
-                <div class="box-text">
-                    <h1>The Odin Project assignment</h1>
-                    <p>This is a website about our pets practicing flexbox!</p>
-                    <button class="btn-1">Sign up</button>
+                <div class="box1-inside">
+                    <h1>PAVEL ŠPREŇAR</h1>
+                    <h2>Autoservis | Pneuservis</h2><br>
+                    <h3>Zavolejte ted' !</h3><button class="btn-1"><a href="tel:+420724960620">724 960 620</a></button>
                 </div>
-                <div class="img-box">
-                    <img class="img-divino" src="./resources/images/Divinosm.jpg" alt="Divino, lusitano gelding"/>
+                <div class="box2-inside">
+                    <img class="img-1" src="./resources/images/auto-4.jpg" alt="Ford Ranger interier"/>
                 </div>
             </div>
             
         </header>
         <!--Main section-->
         <main>
-        <section>
-        <h2>Let me introduce our pets to you!</h2>
-        <div class="div-figure">
-                <figure>
-                    <img src="./resources/images/Dobbysm.jpg" alt="Dobby the Vizsla"/>
-                    <figcaption>Dobby; our mini-Vizsla. <br>She likes to have a blanket.</figcaption>
-                </figure>
-                <figure>
-                    <img src="./resources/images/Flokism.jpg" alt="Floki the German pointer"/>
-                    <figcaption>Floki; our German Shorthair.<br> He loves playing with sticks.</figcaption>
-                </figure>
-                <figure>
-                    <img src="./resources/images/Antjesm.jpg" alt="Antje the cat"/>
-                    <figcaption>Antje; out sweet cat.<br> We've found her when she <br>was small.</figcaption>
-                </figure>
-                <figure>
-                    <img src="./resources/images/Rietjesm2.jpg" alt="Rietje the cat" />
-                    <figcaption>Rietje; another sweet cat.<br> We've found him also<br> when he was small.
-            </div>
-    </section>
+        <!-- First Slideshow -->
+<section>
+    <h3 id="center-text">Autoservis</h3>
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides1 fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./resources/images/auto-2.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides1 fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./resources/images/auto-1.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides1 fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./resources/images/auto-3.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides1 fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="./resources/images/auto-5.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot1" onclick="currentSlide(1, 1)"></span>
+        <span class="dot1" onclick="currentSlide(2, 1)"></span>
+        <span class="dot1" onclick="currentSlide(3, 1)"></span>
+        <span class="dot1" onclick="currentSlide(4, 1)"></span>
+    </div>
+</section>
+
+<!-- Second Slideshow -->
+<section>
+    <h3 id="center-text">Pneuservis</h3>
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides2 fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./resources/images/pneu2.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides2 fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./resources/images/pneu1.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides2 fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./resources/images/vyber_pneumatik.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides2 fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="./resources/images/detail-1.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot2" onclick="currentSlide(1, 2)"></span>
+        <span class="dot2" onclick="currentSlide(2, 2)"></span>
+        <span class="dot2" onclick="currentSlide(3, 2)"></span>
+        <span class="dot2" onclick="currentSlide(4, 2)"></span>
+    </div>
+</section>
+
     <!--blockquote section-->
     <section class="quote-container">
         <blockquote>
             <figure class="fig-quote"></figure>
-            "Pets bring out the best in us by offering unconditional love, boundless joy, and unwavering companionship. Whether furry, feathered, or scaled, pets make our lives brighter and fuller."
-            <figcaption class="fig2" style="font-size:20px;">-Thor, God of Thunder</figcaption>
+            "Výjimečné služby, bezkonkurenční odbornost - kde záleží na každém kilometru. Věřte nám, že vaše cesta bude hladká a bezpečná."
+            <figcaption class="fig2" style="font-size:20px;">-Pavel, Našeptávač Aut</figcaption>
         </figure>
         </blockquote>
     </section>
     <section>
-        <div>
-            <div class="action">
-                <p class="p-action-1">Call to action, it's time!</p><br>
-                <button class="btn2">Sign up!</button>
-                <p class="p-action-2">Sign up to receive the latest news about our pets!</p>
+        <div class="footer-content">
+            <div class="boxfooter-item">
+                <address>
+                    Adresa: <br>
+                    Třída Soukenická 31,<br>
+                    550 01 Broumov 1
+                </address>
             </div>
-            
+            <div class="boxfooter-item">
+                <p>Platební metody:<br>Hotově</p>
+            </div>
+            <div class="boxfooter-item">
+                <p>Oficiální údaje:<br>
+                    Pavel Špreňar<br>
+                    IČ: 63187230
+                </p>
+            </div>
+            <div class="boxfooter-item">
+                <div class="map-and-button">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.029463687565!2d16.33301507755975!3d50.5894056773476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e4315ec60b35b%3A0x9daf15e9ef4c8fd0!2st%C5%99.%20Soukenick%C3%A1%2031%2C%20550%2001%20Broumov%201!5e0!3m2!1sen!2scz!4v1721925223371!5m2!1sen!2scz" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button class="btn2">Jet!</button>
+                </div>
+            </div>
         </div>
     </section>
+    
+    
+
         </main>
         <!--Footer section-->
         <footer>
-            <p style="font-size:14px;">Copyright © The Odin project / Danielle Fiene</p>
+            <p style="font-size:14px;">Copyright © Danielle Fiene</p>
         </footer>
         <!--Room for JavaScript file -->
-        <script src="index.js"></script>
+        <script src="./resources/JS/slide.js" defer></script>
     </body>
 
 </html>
