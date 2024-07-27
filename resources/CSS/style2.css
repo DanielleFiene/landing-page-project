@@ -254,7 +254,7 @@ blockquote {
 }
 
 .quote-container {
-  background-color: #E5E7EB;
+  background-color: #ffddd1;
   margin-top: 100px;
   display: flex;
   justify-content: center;
@@ -270,7 +270,7 @@ blockquote {
 .btn2 {
   background-color: #3882F6;
   padding: 12px;
-  color: #E5E7EB;
+  color: #ffddd1;
   width: 40%;
   font-weight: bold;
   border-radius: 20px;
@@ -358,7 +358,7 @@ footer {
     width: 100%;
 }
 
-.navbar-items2.active {
+.navbar-items2 .active {
     display: flex;
 }
 
