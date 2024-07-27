@@ -1,2 +1,2 @@
-# landing page odin project
+# landing page project
  assignment from odin project
