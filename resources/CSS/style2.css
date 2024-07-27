@@ -289,6 +289,10 @@ blockquote {
   transform: scale(0.9);
 }
 
+#btn-link:hover {
+  color: #E5E7EB;
+}
+
 
 .footer-content {
   background-color: #3882F6;
